@@ -11,7 +11,7 @@ const voteModule = sdk.getVoteModule("0xc8adcf7367f382ad8f6e562dc6d4acbafa9d4f5c
 
 
 const App = () => {
-  const { connectWallet, address, error, provider } = useWeb3();
+  const { connectWallet, address, provider } = useWeb3();
   console.log("Address: ", address)
 
   const signer = provider ? provider.getSigner() : undefined;
